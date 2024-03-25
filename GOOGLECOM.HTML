@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Search Engine</title>
+    <script>
+        function redirectToLuckyPage() {
+            window.location.href = "https://tr.pinterest.com/fsevvaln/e%C4%9Flenceli-i%C3%A7erikler/"; // Buraya yönlendirmek istediğiniz sayfanın URL'sini ekleyinİZ..
+        }
+    </script>
+    <style>
+        /* Temel stil */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 180px;
+            padding: 0;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .google-logo {
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(11, 33, 80);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        .search-button {
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .search-button:hover {
+            background-color: #3367d6;
+        }
+        .feeling-lucky-button {
+            background-color: #fbbc05;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .feeling-lucky-button:hover {
+            background-color: #fbbc05;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="google-logo">Google...</div>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" class="search-input" name="q" placeholder="Google'da ara...">
+            <button type="submit" class="search-button">Ara</button>
+            <button type="button" class="feeling-lucky-button" onclick="redirectToLuckyPage()">Kendimi TUHAF Hissediyorum</button>
+
+        </form>
+    </div>
+</body>
+</html>
